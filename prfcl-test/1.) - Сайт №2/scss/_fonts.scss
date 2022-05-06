@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "TTNormsPro-Light", Arial, sans-serif;
+  src: url(../fonts/TTNormsPro-Light.woff2) format("woff2"),
+       url(../fonts/TTNormsPro-Light.woff) format("woff");
+       font-weight: 300;
+       font-size: normal;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: "TTNormsPro-LightItalic", Arial, sans-serif;
+  src: url(../fonts/TTNormsPro-LightItalic.woff2) format("woff2"),
+       url(../fonts/TTNormsPro-LightItalic.woff) format("woff");
+       font-weight: 300;
+       font-size: normal;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: "TTNormsPro-Regular", Arial, sans-serif;
+  src: url(../fonts/TTNormsPro-Regular.woff2) format("woff2"),
+       url(../fonts/TTNormsPro-Regular.woff) format("woff");
+       font-weight: 400;
+       font-size: normal;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: "TTNormsPro-ExtraBold", Arial, sans-serif;
+  src: url(../fonts/TTNormsPro-ExtraBold.woff2) format("woff2"),
+       url(../fonts/TTNormsPro-ExtraBold.woff) format("woff");
+       font-weight: 700;
+       font-size: normal;
+       font-display: swap;
+}

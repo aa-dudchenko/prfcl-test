@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+      <div class="container container-header__top">
+      <a href="#" class="header__logo">
+        <img src="images/header-logo.png" width="50" height="30" alt="logo">
+      </a>   
+         
+        <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+      <div class="menu__nav">
+        
+        <ul class="menu__nav-list">
+            <li>
+              <a href="#">Практикум</a>
+              <ul>
+                <li> <a href="#">Тренажёры</a> </li>
+                <li> <a href="#">Профессиональные навыки</a> </li>
+                <li> <a href="#">Проекты для практики</a> </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Профессии</a>
+              <ul>
+                <li> <a href="#">Фронтенд-разработчик</a> </li>
+                <li> <a href="#">React-разработчик</a> </li>
+                <li> <a href="#">Фулстек-разработчик</a> </li>
+                <li> <a href="#">Бэкенд-разработчик</a> </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Курсы</a>
+              <ul>
+                <li> <a href="#">HTML и CSS. Профессиональная вёрстка сайтов</a> </li>
+                <li> <a href="#" class="border-link">HTML и CSS. Адаптивная вёрстка и автоматизация</a> </li>
+                <li> <a href="#" class="border-sublick">JavaScript. Профессиональная разработка веб-интерфейсов</a> </li>
+                <li> <a href="#">JavaScript. Архитектура клиентских приложений</a> </li>
+                <li> <a href="#" class="border-link">React. Разработка сложных клиентских приложений</a> </li>
+                <li> <a href="#" class="border-sublick">PHP. Профессиональная веб-разработка</a> </li>
+                <li> <a href="#" class="border-link">PHP и Yii. Архитектура сложных веб-сервисов</a> </li>
+                <li> <a href="#" class="border-sublick">Node.js. Разработка серверов приложений и API</a> </li>
+                <li> <a href="#">Анимация для фронтендеров</a> </li>
+                <li> <a href="#">Вёрстка email-рассылок</a> </li>
+                <li> <a href="#">Vue.js. Разработка клиентских приложений</a> </li>
+                <li> <a href="#">Регулярные выражения для фронтендеров</a> </li>
+                <li> <a href="#">Шаблонизаторы HTML</a> </li>
+                <li> <a href="#">Алгоритмы и структуры данных</a> </li>
+              </ul>
+            </li>
+        </ul>
+
+        <ul class="menu__nav-list">
+          <li> <a href="#">Регистрация</a> </li>
+          <li> <a href="#">Войти</a> </li>
+        </ul>
+
+        <div class="mobMenu">
+
+          <div class="mobMenu__item">
+            <a class="mobMenu__item-title" href="#">Практикум</a>
+            <ul>
+              <li><a href="#">Тренажёры</a></li>
+              <li><a href="#">Профессиональные навыки</a></li>
+              <li><a href="#">Проекты для практики</a></li>
+            </ul>            
+          </div>
+
+          <div class="mobMenu__item">
+            <a class="mobMenu__item-title" href="#">Профессии</a>
+            <ul>
+              <li><a href="#">Фронтенд-разработчик</a></li>
+              <li><a href="#">React-разработчик</a></li>
+              <li><a href="#">Фулстек-разработчик</a></li>
+              <li><a href="#">Бэкенд-разработчик</a></li>
+            </ul>            
+          </div>
+
+          <div class="mobMenu__item">
+            <a class="mobMenu__item-title" href="#">Курсы</a>
+            <ul>
+              <li><a href="#">HTML и CSS. Профессиональная вёрстка сайтов</a></li>
+              <li><a href="#">HTML и CSS. Адаптивная вёрстка и автоматизация</a></li>
+              <li><a href="#">JavaScript. Профессиональная разработка веб-интерфейсов</a></li>
+              <li><a href="#">JavaScript. Архитектура клиентских приложений</a></li>
+              <li><a href="#">React. Разработка сложных клиентских приложений</a></li>
+              <li><a href="#">PHP. Профессиональная веб-разработка</a></li>
+              <li><a href="#">PHP и Yii. Архитектура сложных веб-сервисов</a></li>
+              <li><a href="#">Node.js. Разработка серверов приложений и API</a></li>
+              <li><a href="#">Анимация для фронтендеров</a></li>
+              <li><a href="#">Вёрстка email-рассылок</a></li>
+              <li><a href="#">Vue.js. Разработка клиентских приложений</a></li>
+              <li><a href="#">Регулярные выражения для фронтендеров</a></li>
+              <li><a href="#">Шаблонизаторы HTML</a></li>
+              <li><a href="#">Алгоритмы и структуры данных</a></li>
+            </ul>
+          </div>
+
+          
+          <div class="mobMenu__item"> <a class="mobMenu__item-userlink" href="#">Регистрация</a> </div>
+          <div class="mobMenu__item"> <a class="mobMenu__item-userlink" href="#">Войти</a> </div>
+        </div>
+
+      </div>
+    </div>   
+    
+    <div class="slider">
+      <div class="container">
+      <div class="slider__box">
+         <div class="slider__box-item">
+           <div class="slider__text">
+             <h2>BucketListy</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi alias dignissimos consequuntur exercitationem beatae, accusantium voluptates sunt molestias, ratione minus dolorem ipsum eius aperiam in. Aliquam expedita placeat facilis sapiente, ratione dolores inventore mollitia vel non. Incidunt, cum similique.</p>
+           </div>
+           <img src="images/slider-1.jpg" alt="" class="slider__box-img">
+         </div>
+         <div class="slider__box-item">
+          <div class="slider__text">
+            <h2>SomeTitle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi alias dignissimos consequuntur exercitationem beatae, accusantium voluptates sunt molestias, ratione minus dolorem ipsum eius aperiam in. Aliquam expedita placeat facilis sapiente, ratione dolores inventore mollitia vel non. Incidunt, cum similique.</p>
+          </div>
+           <img src="images/slider-2.jpg" alt="" class="slider__box-img">
+         </div>
+        <div class="slider__box-item">
+          <div class="slider__text">
+            <h2>SomethingElse</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi alias dignissimos consequuntur exercitationem beatae, accusantium voluptates sunt molestias, ratione minus dolorem ipsum eius aperiam in. Aliquam expedita placeat facilis sapiente, ratione dolores inventore mollitia vel non. Incidunt, cum similique.</p>
+          </div>
+          <img src="images/slider-3.jpg" alt="" class="slider__box-img">
+        </div>
+      </div>
+     </div>
+     </div>
+  </header> 
+
+  <main>
+    <div class="container container-content">
+      <div class="content">
+        <h1 class="content__title">Что такое семантическая вёрстка и зачем она нужна</h1>
+        <p class="content__text"><b>Давным-давно (лет пятнадцать назад) почти все делали сайты и не переживали о том, что под капотом, весёлое было время.</b> Верстали таблицами, использовали всё, что попадётся под руку (а попадались в основном div и span) и не особо заморачивались о доступности. А потом случился HTML5 и понеслось.</p>
+        <p class="content__text">Семантическая вёрстка — подход к разметке, который опирается не на содержание сайта, а на смысловое предназначение каждого блока и логическую структуру документа. Даже в этой статье есть заголовки разных уровней — это помогает читателю выстроить в голове структуру документа. Так и на странице сайта — только читатели будут немного другими.</p>
+        <h2>Почему семантика важна</h2>
+        <p class="content__text">Чтобы сделать сайт доступным. Зрячие пользователи могут без проблем с первого взгляда понять, где какая часть страницы находится — где заголовок, списки или изображения. Для незрячих или частично незрячих всё сложнее. Основной инструмент для просмотра сайтов не браузер, который отрисовывает страницу, а скринридер, который читает текст со страницы вслух.</p>
+        <p class="content__text content__quote"> <q>Но в актуальной версии стандарта HTML Living Standard есть семантические теги почти для всех основных частей сайта, и лучше пользоваться ими.</q></p>
+        <p class="content__text">Этот инструмент «зачитывает» содержимое страницы, и семантическая структура помогает ему лучше определять, какой сейчас блок, а пользователю понимать, о чём идёт речь. Таким образом семантическая разметка помогает большему количеству пользователей взаимодействовать с вашим сайтом. Например, наличие заголовков помогает незрячим в навигации по странице. У скринридеров есть функция навигации по заголовкам, что ускоряет знакомство с информацией на сайте.</p>
+        <p class="content__text"><b>Чтобы сайт был выше в поисковиках.</b> Компании, которые создают поисковики, не разглашают правила ранжирования, но известно, что наличие семантической разметки страниц помогает поисковым ботам лучше понимать, что находится на странице, и в зависимости от этого ранжировать сайты в поисковой выдаче.</p>
+      
+      </div>
+      <div class="popular">
+        <h3 class="popular__title">популярное</h3>
+        <a class="popular__item" href="#">
+          <img src="images/polular-1.jpg" alt="">
+          <span class="popular__item-name">10 лучших запаведников</span>
+          <span class="popular__item-date">10 января 2020</span>
+        </a>
+        <a class="popular__item" href="#">
+          <img src="images/polular-2.jpg" alt="">
+          <span class="popular__item-name">Куда отправиться в путь?</span>
+          <span class="popular__item-date">5 марта 2020</span>
+        </a>
+        <a class="popular__item" href="#">
+          <img src="images/polular-3.jpg" alt="">
+          <span class="popular__item-name">Мечты сбываются</span>
+          <span class="popular__item-date">4 декабря 2021</span>
+        </a>
+        <a class="popular__item" href="#">
+          <img src="images/polular-4.jpg" alt="">
+          <span class="popular__item-name">Рецепты для здоровья</span>
+          <span class="popular__item-date">6 июня 2021</span>
+        </a>
+        <a class="popular__item" href="#">
+          <img src="images/polular-5.jpg" alt="">
+          <span class="popular__item-name">Витамины в зимнее время</span>
+          <span class="popular__item-date">3 февраля 2021</span>
+        </a>
+        <a class="popular__item" href="#">
+          <img src="images/polular-6.jpg" alt="">
+          <span class="popular__item-name">Планы на лето</span>
+          <span class="popular__item-date">1 мая 2020 </span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+  
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(85deg, #fb63f9, #c2e534);
+  font-family: monospace;
+  color: lawngreen;
+}
+
+.order {
+  /* ---Animation for new price:--- */
+}
+.order__wrap {
+  padding-top: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.order__product {
+  font-size: 22px;
+  border-radius: 20px;
+  padding: 64px 20px;
+  height: 450px;
+  text-align: center;
+  width: 30%;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(4deg, #5462c3, #ba872c);
+}
+.order__price span {
+  display: block;
+}
+.order__price-common {
+  color: #000;
+  font-style: italic;
+  margin-bottom: 30px;
+  position: relative;
+}
+.order__price-common::after {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid red;
+  width: 100%;
+  height: 55%;
+  -webkit-transform: rotate(2.5deg);
+          transform: rotate(2.5deg);
+  border-radius: 30% 0 70% 0;
+  left: 0px;
+}
+.order .area {
+  font-size: 40px;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: -3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-animation: blur 1s ease-out infinite;
+          animation: blur 1s ease-out infinite;
+  text-shadow: 0px 0px 1px #361342, 0px 0px 1px #361342;
+  padding-bottom: 20%;
+}
+@-webkit-keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 50px #fff, 0px 0px 20px #fff, 0px 0px 20px #fb281b, 0px 0px 50px #fb281b, 0px 10px 20px #fb281b, 0px 10px 20px #fb281b, 0px 10px 20px #fb281b, 0px 10px 20px #fb281b, 0px -5px 20px #fb281b, 0px -5px 20px #fb281b;
+  }
+}
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 50px #fff, 0px 0px 20px #fff, 0px 0px 20px #fb281b, 0px 0px 50px #fb281b, 0px 10px 20px #fb281b, 0px 10px 20px #fb281b, 0px 10px 20px #fb281b, 0px 10px 20px #fb281b, 0px -5px 20px #fb281b, 0px -5px 20px #fb281b;
+  }
+}
+.order__remainder-date {
+  color: lawngreen;
+}
+.order__remainder-number {
+  display: block;
+  margin-top: 25px;
+  color: #fb281b;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px;
+  border: 1.5px dashed lawngreen;
+  border-radius: 10px;
+}
+.order img {
+  max-width: 450px;
+}
+
+.order__form {
+  position: relative;
+  width: 30%;
+  height: 450px;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(4deg, #ba872c, #5462c3);
+}
+
+.form__left-decoration, .form__right-decoration {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fb281b;
+  border-radius: 50%;
+}
+
+.form__left-decoration {
+  bottom: 60px;
+  left: -12px;
+}
+
+.form__right-decoration {
+  top: 60px;
+  right: -12px;
+}
+
+.form__left-decoration:before, .form__left-decoration:after, .form__right-decoration:before, .form__right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: lawngreen;
+}
+
+.form__left-decoration:before {
+  top: -20px;
+}
+
+.form__left-decoration:after {
+  top: 20px;
+  left: 0px;
+}
+
+.form__right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+
+.form__right-decoration:after {
+  top: 20px;
+  right: 0px;
+}
+
+.form__inner {
+  padding: 50px 20px;
+}
+
+.form__inner input, .form__inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  background: #E9EFF6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form__inner input[type=submit] {
+  margin-top: 20px;
+  height: 60px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 1.5px dashed lawngreen;
+  color: lawngreen;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #E9EFF6;
+  background: transparent;
+}
+.form__inner input[type=submit]:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 1px solid #fb281b;
+}
+
+.form__inner textarea {
+  resize: none;
+}
+
+.form__inner h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: lawngreen;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1230px) {
+  .order img {
+    width: 400px;
+  }
+}
+@media (max-width: 1120px) {
+  .order img {
+    width: 380px;
+  }
+}
+@media (max-width: 1050px) {
+  .order img {
+    width: 350px;
+  }
+}
+@media (max-width: 960px) {
+  .order img {
+    width: 420px;
+  }
+
+  .order__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .order__image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 20px;
+  }
+
+  .order__product {
+    margin-bottom: 30px;
+  }
+
+  .order__product,
+.order__form {
+    width: 65%;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 720px) {
+  .order__product,
+.order__form {
+    width: 80%;
+  }
+}
+@media (max-width: 440px) {
+  .order__product,
+.order__form {
+    width: 95%;
+  }
+
+  .order img {
+    width: 320px;
+  }
+}

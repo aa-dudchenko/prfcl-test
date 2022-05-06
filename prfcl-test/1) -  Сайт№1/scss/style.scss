@@ -1,0 +1,501 @@
+@import "global";
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  padding: 20px 0;
+  &__phone {
+    display: flex;
+  }
+  &__phone-image img {
+    width: 90px;
+    margin: 0 68px 0 45px;
+  }
+  &__phone-info {
+    margin-left: 7px;
+    padding-top: 9px;
+    & a:hover {
+      color: #ff0000;
+      transition: all 0.3s;
+    }
+  }
+  &__overTile {
+    font-size: 11px;
+    color: #404040;
+    margin-bottom: 23px;
+    padding-left: 4px;
+    & span {
+      font-size: 28px;
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 400;
+    & span {
+      font-size: 14px;
+      color: #fff;
+      background: #8cb400;
+      position: relative;
+      padding: 3px;
+      margin: 0 10px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-top: 11px solid transparent;
+        border-left: 10px solid #8cb400;
+        border-bottom: 11px solid transparent;
+      }
+    }
+  }
+
+  &__coupon {
+    width: 262px;
+    height: 162px;
+    box-shadow: 0 5px 8px -3px #bab2b2;
+  }
+  &__coupon-head {
+    height: 34px;
+    background-color: #ff5a5a;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    & span {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+  &__coupon-body {
+    position: relative;
+    & span {
+      position: absolute;
+      color: red;
+      font-size: 26px;
+      font-weight: 600;
+      right: 45px;
+      bottom: 68px;
+    }
+    & button {
+      display: block;
+      width: 210px;
+      height: 50px;
+      background: #f2df00;
+      margin: 54px auto;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+}
+
+
+//  Product-----------------------
+
+.nav-menu {
+  display: flex;
+  font-size: 14px;
+  box-shadow: 0 6px 6px -7px;  
+  &__item {
+    padding: 18px 55px;
+    background: #f4f4f4;
+    box-shadow: 0px 3px 3px #969191;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__item--active {
+    background: white!important;
+    border-bottom: 3px solid #f2df00!important;
+}
+}
+
+.product {
+  padding-bottom: 10px;
+  
+  // Description--------------
+  &__description {
+  margin-bottom: 300px;
+  margin-top: 20px;
+  display: flex;
+  }
+  &__description-images img {
+  width: 370px;
+  margin-left: 30px;
+  }
+  &__description-sub-images {
+  display: flex;
+  width: 490px;
+  & img {
+    width: 45px;
+    height: 55px;
+    cursor: pointer;
+    border: 2px solid #d4dade;
+    padding: 5px;
+  }
+  }
+
+  &__description-about {
+  font-size: 13px;
+    & h3 {
+    color: #222222;
+    margin-bottom: 20px;
+    }
+    & ul {
+    padding-left: 15px;
+    line-height: 1.67;
+    }
+    & li {
+    color: #6b6b6bf2;
+    list-style:disc;    
+   }
+   & img {
+     width: 107px;
+     padding-top: 14px;
+   }
+}
+
+  &__description-orderBlock {
+    width: 263px;
+    height: 105px;
+    box-shadow: 0 5px 8px -3px #bab2b2;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    & button {
+      display: block;
+      width: 210px;
+      height: 50px;
+      background: #f2df00;
+      margin: 40px auto;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+
+  // Specifications-------------------
+  .line {
+    width: 20%;
+    border: 1px dashed #cbcbcb;
+    display: inline-block;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 0 3px;
+  }
+  .circle-1 {
+    background-color: #42aaff;
+  }
+  .circle-2 {
+    background-color: #FFD700;
+  }
+  .circle-3 {
+    background-color: #8b00ff;;
+  }
+  .circle-4 {
+    background-color: #000000;
+  }
+
+  &__specifications {
+    display: none;
+    & h2 {
+      font-weight: 400;
+      color: #333333;
+      font-size: 22px;
+      margin: 87px 0 80px;
+      position: relative;
+      &::after {
+        position:absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: #cbcbcb;
+        bottom: -34px;
+        left: 0;
+      }
+    }
+    & h3 {
+      color: #000000;
+      font-weight: 500;
+      font-size: 18px;
+      margin: 42px 0 22px;
+    }
+    & li {
+      color: #333333;
+      font-size: 15px;
+    }
+    & ul li:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    & li a {
+      color: #337ab7;
+      &:hover {
+        color: #ff0000;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  // Reviews----------------
+  &__reviews {
+    display: none;
+    & h2, h3 {
+      color: #333333;
+      font-size: 22px;
+      font-weight: 400;
+      position: relative; 
+      margin: 44px 0 72px 0;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 0.5px;
+        width: 100%;
+        background:#cbcbcb;
+        left: 0;
+        bottom: -32px;
+      }
+    }
+    & h3 {
+      margin-top: 0;
+    }
+  }
+  
+  &__reviews-list {
+    margin-bottom: 30px;
+    & li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 38px;
+    & span {
+      font-size: 16px;
+      position: absolute;
+      left: 0;
+    }
+  }
+   & a{
+    display: block;
+  }
+  }  
+ 
+  &__reviews-link {
+      color: #3333cc;
+      font-size: 16px;
+      font-weight: 600;  
+      margin-bottom: 6px;  
+  }
+  &__reviews-sublink {
+      color: #007700;
+    font-size: 13px;
+    }
+
+  &__reviews-footer {
+    font-size: 14px;
+    color: #333333;
+    & p {
+       margin-bottom: 20px;
+    }
+    & a {
+       color: #337ab7;
+     }
+  }
+
+}
+
+.videos__wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;	
+}
+
+.items__body {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+.item__video {
+	position: relative;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 56% 0px;
+}
+.item__video iframe {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+// Modal-----------------
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 1s;
+}
+.modal-content {
+  position: relative;
+  width: 548px;
+  height: 505px;
+  background: #337ab7;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  margin: 0 auto;
+  padding-top: 102px;
+  margin-top: 32px;
+  
+  
+  & .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    opacity: .2;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #fff;
+    &:hover {
+      opacity: 0.45;
+    }
+  }
+  & form {
+    position: relative;
+    width: 100%;
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & input {
+    width: 280px;
+    height: 40px;
+    display: block;
+    border: none;
+    margin-bottom: 28px;
+    padding-left: 15px;
+    font-size: 16.58px;
+    background: #dcf0ff;
+    }
+    & button {
+      display: block;
+      width: 315px;
+      height: 40px;
+      background: red;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-transform: uppercase;
+      font-family: 'HELVETIC', sans-serif;
+      font-size: 22.07px;
+      border: none;
+
+    }
+
+
+   
+    & .main-check  {
+      position: absolute;
+      width: 200px;
+      color: #333333;
+      font-size: 14px;
+      display: flex;
+      bottom: 22px;
+      right: 163px;
+      & .text {
+        display: block;
+        padding-top: 5px;
+        padding-right: 5px;
+      }
+      
+      & label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        user-select: none;
+      }
+      & label:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      
+      & label input:checked ~ .checkmark {
+        background-color: #2196F3;
+      }
+      & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      & .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 3px;
+        border: 1px solid #cccccc;
+      }
+      & .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      & label input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      & label .checkmark:after {
+        left: 7px;
+        top: 1px;
+        width: 5px;
+        height: 14px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      & .chcol-1 {
+        background: #42aaff;
+      }
+      & .chcol-2 {
+        background: #ffd700;
+        left: 25px;
+      }
+      & .chcol-3 {
+        background: #8b00ff;
+        left: 50px;
+      }
+      & .chcol-4 {
+        background: #000;
+        left: 75px;
+      }
+    }
+    
+  }
+}
+
+
+

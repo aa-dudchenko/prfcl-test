@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex</title>
+  <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="order">
+    <div class="container">
+      <div class="order__wrap">
+
+        <div class="order__product">
+          <div class="order__price">
+            <span class="order__price-common">Обычная цена: 1449₽</span>
+            <span class="order__price-discount">Цена по акции: <span class="area">149₽</span></span>
+          </div>
+
+          <div class="order__remainder">
+            <span class="order__remainder-date">Остаток товара на 11.11.2050:</span>
+            <span class="order__remainder-number">58</span>
+          </div>
+        </div>
+
+        <div class="order__image">
+          <img src="images/diamond-1857736_960_720.webp" alt="">
+        </div>
+
+        <form action="#" class="order__form">
+          <div class="form__left-decoration"></div>
+          <div class="form__right-decoration"></div>
+          <div class="form__inner">
+            <h3>Оформить заказ</h3>
+            <input type='text' name='username' required placeholder="Введите имя">
+            <input type='tel' name='usernumber' pattern="^[ 0-9]+$" required placeholder="Номер, начиная с +7..">
+            <textarea placeholder="Пожелания к заказу..." rows="3"></textarea>
+            <input type="submit" value="Отправить">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
